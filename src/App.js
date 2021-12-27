@@ -1,24 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Button from './components/common/Button';
+import TextBox from './components/common/TextBox';
+import { Fragment } from 'react';
+import TextArea from './components/common/TextArea';
+import ButtonSocialMedia from './components/common/ButtonSocialMedia';
+import Main from './components/containers/Main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Main/>
   );
 }
 
