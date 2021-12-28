@@ -2,8 +2,8 @@ import React from 'react';
 
 const ProfileImage = () => {
     return (
-        <img id="profile-img" className='profile-img mx-auto' src="img/profile.JFIF" alt="profile-image"></img>
+        <img className='profile-img mx-auto mt-2' src="img/profile.JFIF" alt="profile-image"/>
     );
-}
+};
 
 export default ProfileImage;

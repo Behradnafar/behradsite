@@ -8,12 +8,17 @@
 .main {
     width: 60%;
     height: 80%;
-
 }
 
 .profile {
     background: #000000;
-    height: 47%;
+    height: 48.5%;
+    width: 30%;
+}
+
+.Menu {
+    background: #000000;
+    height: 48.5%;
     width: 30%;
 }
 
@@ -53,6 +58,10 @@
     color: #f4d03f;
 }
 
+.bg-custom-yellow {
+    background-color: #f4d03f;
+}
+
 @font-face {
     font-family: 'OswaldBold';
     src: url('fonts/OswaldBold.eot');
@@ -69,6 +78,10 @@
 
 .font-18 {
     font-size: 18px;
+}
+
+.font-19 {
+    font-size: 19px;
 }
 
 .size-fit-content {
@@ -93,4 +106,32 @@
     transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -webkit-transition: opacity 1s ease-in-out;
+}
+
+.h-15 {
+    height: 15%;
+}
+
+.h-60 {
+    height: 60%;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.border-left-gray {
+    border-left: #61625c solid 1px !important;
+}
+
+.border-bottom-gray {
+    border-bottom: #61625c solid 1px;
+}
+
+.border-top-gray {
+    border-top: #61625c solid 1px;
 }
