@@ -54,12 +54,17 @@
 }
 
 @font-face {
-    font-family: Oswald;
-    src: url(fonts/Oswald-VariableFont_wght.woff2);
+    font-family: 'OswaldBold';
+    src: url('fonts/OswaldBold.eot');
+    src: url('fonts/OswaldBold.eot') format('embedded-opentype'),
+         url('fonts/OswaldBold.woff2') format('woff2'),
+         url('fonts/OswaldBold.woff') format('woff'),
+         url('fonts/OswaldBold.ttf') format('truetype'),
+         url('fonts/OswaldBold.svg#OswaldBold') format('svg');
 }
 
 .font-oswald {
-    font-family: Oswald;
+    font-family: OswaldBold;
 }
 
 .font-18 {
