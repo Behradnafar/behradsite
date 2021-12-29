@@ -1,10 +1,11 @@
 import React from 'react';
+import SocialMediaButton from '../common/SocialMediaButton';
 
 const SocialMediaButtons = ({ socialMediaButtonsData }) => {
     return (
-        <div>
-            {socialMediaButtonsData.map(b => (
-                <SocialMediaButtons fontClass={b.fontClass} />
+        <div className='d-flex justify-content-center mb-2'>
+            {(socialMediaButtonsData ?? []).map(b => (
+                <SocialMediaButton fontClass={b.fontClass} />
             ))}
         </div>
     );

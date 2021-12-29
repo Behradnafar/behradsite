@@ -46,10 +46,10 @@
     transform: translate(0, 0);
     background-color: #f4d03f;
     color: #000000;
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
-.social-media-btn:hover {
+.black-btn:hover {
     background-color: #000000;
     color: #f4d03f;
 }
@@ -78,6 +78,10 @@
 
 .font-18 {
     font-size: 18px;
+}
+
+.font-17 {
+    font-size: 17px !important;
 }
 
 .font-19 {
