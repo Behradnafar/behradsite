@@ -1,19 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import MenuButtons from '../custom/MenuButtons';
+import SocialMediaButtons from '../custom/SocialMediaButtons';
 
 const Menu = () => {
-    const menuButtonsData = [
-        {text: 'Home', fontClass: 'fa-user'},
-        {text: 'Resume', fontClass: 'fa-file-text'},
-        {text: 'Portfolio', fontClass: 'fa-suitcase'},
-        {text: 'Contact', fontClass: 'fa-paper-plane'},
-    ];
+    let menuButtonsData = [], socialMediaButtonsData = [];
+    useEffect(() => {
+        menuButtonsData = [
+            { text: 'Home', fontClass: 'fa-user' },
+            { text: 'Resume', fontClass: 'fa-file-text' },
+            { text: 'Portfolio', fontClass: 'fa-suitcase' },
+            { text: 'Contact', fontClass: 'fa-paper-plane' },
+        ];
+        socialMediaButtonsData = [
+            { fontClass: 'fa-linkedin' },
+            { fontClass: 'fa-linkedin' }
+        ];
+    }, [menuButtonsData]);
 
-    return ( 
+
+    return (
         <div className='bg-custom-yellow Menu'>
-            <MenuButtons menuButtonsData={menuButtonsData}/>
+            <MenuButtons menuButtonsData={menuButtonsData} />
+            {/* <SocialMediaButtons socialMediaButtonsData={socialMediaButtonsData} /> */}
         </div>
     );
 };
- 
+
 export default Menu;

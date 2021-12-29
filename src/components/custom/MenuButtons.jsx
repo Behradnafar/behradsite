@@ -2,6 +2,7 @@ import React from 'react';
 import MenuButton from '../common/MenuButton';
 
 const MenuButtons = ({ menuButtonsData }) => {
+    console.log(menuButtonsData);
     return (
         <div className='h-60 mt-3'>
             {menuButtonsData.map((b, i) => (
