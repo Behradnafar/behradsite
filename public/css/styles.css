@@ -58,6 +58,10 @@
     color: #f4d03f;
 }
 
+.text-gray {
+    color: #5c5c5b;
+}
+
 .bg-custom-yellow {
     background-color: #f4d03f;
 }
@@ -81,12 +85,16 @@
     font-family: OswaldBold;
 }
 
-.font-18 {
-    font-size: 18px;
+.font-16 {
+    font-size: 16px !important;
 }
 
 .font-17 {
     font-size: 17px !important;
+}
+
+.font-18 {
+    font-size: 18px;
 }
 
 .font-19 {
@@ -131,6 +139,10 @@
 
 .h-60 {
     height: 60%;
+}
+
+.h-73 {
+    height: 73%;
 }
 
 .w-15 {

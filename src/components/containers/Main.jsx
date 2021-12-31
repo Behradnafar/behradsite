@@ -2,6 +2,7 @@ import React from 'react';
 import Profile from './Profile';
 import Menu from './Menu';
 import Header from './Header';
+import Content from './Content';
 
 const Main = () => {
     return (
@@ -10,11 +11,11 @@ const Main = () => {
                 <Profile />
                 <Menu />
             </div>
-            <div className='d-flex flex-column w-68'>
-                <Header/>
+            <div className='d-flex flex-column justify-content-between w-68'>
+                <Header />
+                <Content />
             </div>
         </div>
-
     );
 };
 
