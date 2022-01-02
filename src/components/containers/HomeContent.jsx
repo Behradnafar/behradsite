@@ -2,11 +2,6 @@ import React from 'react';
 import PersonalInfos from '../custom/PersonalInfos';
 
 const HomeContent = () => {
-    const personalInfosData = [
-        { title: 'Address', value: 'Canada' },
-        { title: 'Email', value: 'behradnafar@gmail.com' },
-        { title: 'Phone', value: '0016473302512' },
-    ];
 
     return (
         <div className='d-flex flex-column justify-content-between h-100 w-100 px-4 py-4 font-oswald'>
@@ -23,7 +18,7 @@ const HomeContent = () => {
             </div>
             <div>
                 <p className='font-17 font-weight-bold'>Personal Info</p>
-                <PersonalInfos personalInfosData={personalInfosData} />
+                <PersonalInfos/>
             </div>
         </div>
     );

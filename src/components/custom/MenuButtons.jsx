@@ -8,7 +8,7 @@ const MenuButtons = () => {
     return (
         <div className='h-60 mt-3'>
             {(context.menuButtonsData ?? []).map((b, i) => (
-                <MenuButton text={b.text} fontClass={b.fontClass} index={i} />
+                <MenuButton id={b.id} text={b.text} fontClass={b.fontClass} isSelected={b.isSelected} index={i} />
             ))}
         </div>
     );
