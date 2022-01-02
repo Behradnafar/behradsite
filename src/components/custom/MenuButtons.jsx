@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import PortfolioContext from '../../contexts/PortfolioContext';
 import MenuButton from '../common/MenuButton';
 
-const MenuButtons = ({ menuButtonsData }) => {
-    console.log(menuButtonsData);
+const MenuButtons = () => {
+    const context = useContext(PortfolioContext);
 
     return (
         <div className='h-60 mt-3'>
-            {(menuButtonsData ?? []).map((b, i) => (
+            {(context.menuButtonsData ?? []).map((b, i) => (
                 <MenuButton text={b.text} fontClass={b.fontClass} index={i} />
             ))}
         </div>

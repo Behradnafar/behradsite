@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import PortfolioContext from '../../contexts/PortfolioContext';
 import SocialMediaButton from '../common/SocialMediaButton';
 
-const SocialMediaButtons = ({ socialMediaButtonsData }) => {
+const SocialMediaButtons = () => {
+    const context = useContext(PortfolioContext);
+
     return (
         <div className='d-flex justify-content-center mb-2'>
-            {(socialMediaButtonsData ?? []).map(b => (
+            {(context.socialMediaButtonsData ?? []).map(b => (
                 <SocialMediaButton fontClass={b.fontClass} />
             ))}
         </div>
