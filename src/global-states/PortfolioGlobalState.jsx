@@ -6,6 +6,7 @@ const PortfolioGlobalState = props => {
     const [menuButtonsData, setMenuButtonsData] = useState([]);
     const [socialMediaButtonsData, setSocialMediaButtonsData] = useState([]);
     const [personalInfosData, setPersonalInfosData] = useState([]);
+    const [resumeTabData, setResumeTabData] = useState([]);
 
     useEffect(() => {
         const menuButtonsDataTemp = [
@@ -28,6 +29,13 @@ const PortfolioGlobalState = props => {
             { title: 'Phone', value: '0016473302512' },
         ];
         setPersonalInfosData(personalInfosDataTemp);
+
+        const resumeTabDataTemp = [
+            { id: 1, text:'Skills', isSelected: true },
+            { id: 2, text:'Educations', isSelected: false },
+            { id: 3, text:'Employment', isSelected: false },
+        ];
+        setResumeTabData(resumeTabDataTemp);
     }, []);
 
     const handleSelectMenuButton = (id, e) => {
@@ -43,8 +51,13 @@ const PortfolioGlobalState = props => {
 
     const getSelectedTitle = () => {
         const selectedMenuButtonsData = menuButtonsData.find(m => m.isSelected);
-        const title = [selectedMenuButtonsData.title1, selectedMenuButtonsData.title2];
+        const title = [selectedMenuButtonsData?.title1, selectedMenuButtonsData?.title2];
         return title;
+    };
+
+    const getSelectedPageId = () => {
+        const selectedMenuButtonsData = menuButtonsData.find(m => m.isSelected);
+        return selectedMenuButtonsData?.id;
     };
 
     return (
@@ -52,9 +65,11 @@ const PortfolioGlobalState = props => {
             menuButtonsData,
             socialMediaButtonsData,
             personalInfosData,
+            resumeTabData,
 
             handleSelectMenuButton,
-            getSelectedTitle
+            getSelectedTitle,
+            getSelectedPageId    
         }}>
             {props.children}
         </PortfolioContext.Provider>

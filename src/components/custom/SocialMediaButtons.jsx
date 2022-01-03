@@ -7,8 +7,8 @@ const SocialMediaButtons = () => {
 
     return (
         <div className='d-flex justify-content-center mb-2'>
-            {(context.socialMediaButtonsData ?? []).map(b => (
-                <SocialMediaButton fontClass={b.fontClass} />
+            {(context.socialMediaButtonsData ?? []).map((b, i) => (
+                <SocialMediaButton key={i} fontClass={b.fontClass} />
             ))}
         </div>
     );

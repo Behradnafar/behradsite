@@ -129,6 +129,10 @@
     -webkit-transition: opacity 1s ease-in-out;
 }
 
+.h-13 {
+    height: 13%;
+}
+
 .h-15 {
     height: 15%;
 }
@@ -145,12 +149,21 @@
     height: 73%;
 }
 
+.h-87 {
+    height: 87%;
+}
+
+
 .w-15 {
     width: 15%;
 }
 
 .w-30 {
     width: 30%;
+}
+
+.w-33 {
+    width: 33%;
 }
 
 .w-68 {
@@ -172,3 +185,30 @@
 .border-top-gray {
     border-top: #61625c solid 1px;
 }
+
+.watermark-home {
+    width: 321px;
+    height: 343px;
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    background: url(../img/profile.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.tab-button {
+    background-color: #000000;
+    color: #f4d03f;
+}
+
+.tab-button:hover {
+    background-color: #f4d03f;
+    color: #000000;
+}
+
+.tab-button-selected {
+    background-color: #f4d03f;
+    color: #000000;
+}
+

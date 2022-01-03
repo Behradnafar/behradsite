@@ -4,6 +4,7 @@ const PortfolioContext = createContext({
     menuButtonsData: [],
     socialMediaButtonsData: [],
     personalInfosData: [],
+    resumeTabData:[],
 
     handleSelectMenuButton: () => { }
 });

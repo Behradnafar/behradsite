@@ -16,9 +16,11 @@ const HomeContent = () => {
                     I have lots of experience in the production of CSS and HTML for modern websites.
                 </p>
             </div>
-            <div>
+            <div className='position-relative' >
                 <p className='font-17 font-weight-bold'>Personal Info</p>
                 <PersonalInfos/>
+                <div className='watermark-home'>
+                </div>
             </div>
         </div>
     );
