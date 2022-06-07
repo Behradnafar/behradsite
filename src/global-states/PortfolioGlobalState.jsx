@@ -7,6 +7,7 @@ const PortfolioGlobalState = props => {
     const [socialMediaButtonsData, setSocialMediaButtonsData] = useState([]);
     const [personalInfosData, setPersonalInfosData] = useState([]);
     const [resumeTabData, setResumeTabData] = useState([]);
+    const [mainSkillsData, setMainSkillsData] = useState([]);
 
     useEffect(() => {
         const menuButtonsDataTemp = [
@@ -31,11 +32,20 @@ const PortfolioGlobalState = props => {
         setPersonalInfosData(personalInfosDataTemp);
 
         const resumeTabDataTemp = [
-            { id: 1, text:'Skills', isSelected: true },
-            { id: 2, text:'Educations', isSelected: false },
-            { id: 3, text:'Employment', isSelected: false },
+            { id: 1, text: 'Skills', isSelected: true },
+            { id: 2, text: 'Educations', isSelected: false },
+            { id: 3, text: 'Employment', isSelected: false },
         ];
         setResumeTabData(resumeTabDataTemp);
+
+        const mainSkillsDataTemp = [
+            { id: 1, text: '.Net', percent: '70' },
+            { id: 2, text: 'SQL Server', percent: '70' },
+            { id: 3, text: 'Blazor', percent: '85' },
+            { id: 4, text: 'React', percent: '70' },
+            { id: 5, text: 'Javascript', percent: '60' }
+        ];
+        setMainSkillsData(mainSkillsDataTemp);
     }, []);
 
     const handleSelectMenuButton = (id, e) => {
@@ -66,10 +76,11 @@ const PortfolioGlobalState = props => {
             socialMediaButtonsData,
             personalInfosData,
             resumeTabData,
+            mainSkillsData,
 
             handleSelectMenuButton,
             getSelectedTitle,
-            getSelectedPageId    
+            getSelectedPageId
         }}>
             {props.children}
         </PortfolioContext.Provider>

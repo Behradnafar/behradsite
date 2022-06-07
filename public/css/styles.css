@@ -153,6 +153,9 @@
     height: 87%;
 }
 
+.h-90 {
+    height: 87%;
+}
 
 .w-15 {
     width: 15%;
@@ -170,8 +173,16 @@
     width: 68%;
 }
 
+.w-70 {
+    width: 70%;
+}
+
 .w-85 {
     width: 85%;
+}
+
+.w-90 {
+    width: 90%;
 }
 
 .border-left-gray {
